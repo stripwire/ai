@@ -5,6 +5,7 @@ systemctl enable dhcpcd
 systemctl start dhcpcd
 echo PAUSE...
 sleep 15
+pacman -Sy
 pacman -S sudo
 cd /ai
 cp sudoers /etc/
